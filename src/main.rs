@@ -1,10 +1,8 @@
-use std::env;
-
 mod client;
 mod server;
 
 fn main() {
-    let args = env::args().collect::<Vec<String>>();
+    let args = std::env::args().collect::<Vec<String>>();
 
     let mode = args
         .get(1)
